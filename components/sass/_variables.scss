@@ -1,0 +1,20 @@
+// _variables.scss
+// =================
+@import "http://fonts.googleapis.com/css?family=Patua+One|Inika";
+
+// Color palette
+$yellow       : #Ffb166;
+$green        : #06d6a0;
+$myBlue       : #26547c;
+$offWhite     : #fffcf9;
+$red          : #cc2936;
+$gray         : #323232;
+
+// Media query screen sizes
+$largeDisplay: 1000px;
+$tabDisplay: 800px;
+$mobileDisplay: 480px;
+
+// Font constants
+$headFont: 'Patua One', sans-serif;
+$bodyFont: 'Inika', serif;

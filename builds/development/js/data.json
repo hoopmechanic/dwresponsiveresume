@@ -1,0 +1,143 @@
+{
+  "software": {
+    "groups": {
+      "group": [
+        {
+          "name": "UX/UI",
+          "groupitems": [
+            {
+              "name": "Sketch",
+              "level": 5
+            },
+            {
+              "name": "Principle",
+              "level": 5
+            },
+            {
+              "name": "InVision",
+              "level": 3
+            },
+            {
+              "name": "Marvel",
+              "level": 3
+            },
+            {
+              "name": "Framer.js",
+              "level": 3
+            },
+            {
+              "name": "Flinto",
+              "level": 3
+            },
+            {
+              "name": "Balsamiq",
+              "level": 3
+            },
+            {
+              "name": "Omnigraffle",
+              "level": 5
+            }
+          ]
+        },
+        {
+          "name": "Graphic Design",
+          "groupitems": [
+            {
+              "name": "Adobe Illustrator",
+              "level": 4
+            },
+            {
+              "name": "Adobe Photoshop",
+              "level": 5
+            },
+            {
+              "name": "Adobe Indesign",
+              "level": 5
+            }
+          ]
+        },
+        {
+          "name": "Text Editors",
+          "groupitems": [
+            {
+              "name": "Adam",
+              "level": 5
+            },
+            {
+              "name": "Sublime",
+              "level": 3
+            },
+            {
+              "name": "Visual Studio Code",
+              "level": 4
+            }
+          ]
+        },
+        {
+          "name": "Video Editors",
+          "groupitems": [
+            {
+              "name": "Devinci Resolve",
+              "level": 4
+            },
+            {
+              "name": "Apple Final Cut Pro 10",
+              "level": 5
+            },
+            {
+              "name": "Adobe Premiere",
+              "level": 3
+            },
+            {
+              "name": "Avid Media Composer",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "name": "Motion Graphics",
+          "groupitems": [
+            {
+              "name": "Adobe Affect Effects",
+              "level": 3
+            }
+          ]
+        },
+        {
+          "name": "Productivity",
+          "groupitems": [
+            {
+              "name": "Microsoft Office",
+              "level": 4
+            }
+          ]
+        },
+        {
+          "name": "Operating Systems",
+          "groupitems": [
+            {
+              "name": "Mac OS ",
+              "level": 5
+            },
+            {
+              "name": "Windows",
+              "level": 5
+            },
+            {
+              "name": "Ubuntu",
+              "level": 5
+            },
+            {
+              "name": "Redhat",
+              "level": 4
+            },
+            {
+              "name": "Debian",
+              "level": 4
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

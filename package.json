@@ -1,0 +1,44 @@
+{
+  "name": "dwresume",
+  "version": "1.0.0",
+  "description": "Dwayne Washington Resume Project",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Dwayne Washington",
+  "devDependencies": {
+    "eslint-config-rallycoding": "^3.2.0",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-coffee": "^3.0.2",
+    "gulp-coffeescript": "0.0.15",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.2.0",
+    "gulp-eslint": "^4.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-json-minify": "^1.2.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-uglifyes": "^0.1.2",
+    "gulp-util": "^3.0.8",
+    "imagemin-pngcrush": "^5.1.0"
+  },
+  "dependencies": {
+    "devicons": "^1.8.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "jquery-cycle": "^3.0.3",
+    "mustache": "^2.3.0",
+    "uglify-js": "^3.3.5"
+  },
+  "scripts": {
+    "postinstall":
+      "cp -R node_modules/devicons/fonts/*.* ./builds/development/fonts; cp -R node_modules/font-awesome/fonts/*.* ./builds/development/fonts",
+    "start-dev": "gulp",
+    "start-prod": "NODE_ENV=production gulp"
+  },
+  "license": "MIT"
+}

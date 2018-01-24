@@ -1,0 +1,23 @@
+// style.scss
+// ==============
+@import "devicons";
+
+// Font Awesone
+$fa-font-path:"../fonts";
+@import "../../node_modules/font-awesome/scss/font-awesome";
+
+
+
+// Compass imports
+@import "compass";
+@import "compass/reset";
+@import "compass/css3/box-shadow";
+
+
+// Core partials
+@import "variables";
+@import "mixins";
+@import "base";
+@import "modules";
+
+// JS partials

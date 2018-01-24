@@ -1,0 +1,343 @@
+// _modules.scss
+// ============
+// Using float technique to position menu
+
+.top-menu {
+  background: $red;
+
+  .mainmenu {
+    overflow: hidden;
+    text-align: center;
+
+    a {
+      padding: 20px 0;
+      width: 20%;
+      float: left;
+      color: white;
+      text-decoration: none;
+    }
+    // .topmenu a
+  } // .topmenu .mainmenu
+} // .topmenu
+
+header {
+  padding: 20px;
+  h1 {
+    font-size:3em;
+    margin: 0;
+    @media (max-width: $largeDisplay) {
+      text-align: center;
+    } // header h1 @media <= 1000px
+  } // header h1
+
+  h2 {
+    border-bottom: none;
+    margin: 0;
+    color: inherit;
+    @media (max-width: $largeDisplay) {
+      text-align: center;
+    } // header @media <= 1000px
+  } // header h2
+
+  .container {
+    position: relative;
+  } // header .container
+
+  .tagline {
+    width: 80%;
+    margin: 0;
+    font-weight: 800;
+    @media (max-width: $largeDisplay) {
+      text-align: center;
+      width: 100%;
+    } // header .tagline @media <= 1000px
+  } // header .tagline
+
+  .social-media {
+    margin: .75em;
+    text-align: center;
+    position: absolute;
+    top: 22px;
+    right: 0;
+    a {
+      padding: 20px;
+      color: $red;
+    } // header .social-media a
+
+    .fa {
+      font-size: 2em;
+    } // header .social-media .fa
+
+    @media (max-width: $largeDisplay) {
+      position: relative;
+      display:block;
+      margin-bottom: 1em;
+    } // header .social-media @media <= 1000px
+  } // header .social-media
+
+  .download {
+    position: absolute;
+    padding: 5px;
+    right: 0;
+    bottom: 0;
+    background-color: $red;
+
+    a {
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+
+      p {
+        font-size: 1em;
+        margin: 0;
+        padding: 10px;
+        color: white;
+      } // header .download a p
+
+    } // header .download a
+    @media (max-width: $largeDisplay) {
+      position: relative;
+      left: 0;
+      width: 30%;
+      margin: 45px auto;
+    } // header .download @media <= 1000px
+
+    @media (max-width: $mobileDisplay) {
+      position: relative;
+      left: 0;
+      width: 30%;
+      margin: 45px auto;
+      font-size: .75em;
+      padding: 2px;
+    } // header .download @media <= 480px
+  } // header .download
+} // header
+
+.personal-info {
+  h5 {
+    font-size: 1.2em;
+  } // .personal-info h5
+
+  p {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0 0 15px 10px;
+  } // .personal-info p
+
+  a {
+    padding: 20px 0;
+    color: $myBlue;
+  } // .personal-info a
+
+  .container {
+    @media (max-width: $largeDisplay) {
+      text-align: center;
+    } // .personal-info .container @media <= 1000px
+  } // .personal-info .container
+}// .personal-info
+
+.skills {
+  #icons {
+    max-width: 97% !important;
+    @media (max-width: $largeDisplay) {
+      width: 100%;
+      margin: 0 auto !important;
+      max-width: 400px !important;
+    } // .skills #icons @media <= 1000px
+    @media (max-width: $tabDisplay) {
+      width: 90%;
+    } // .skills #icons @media <= 800px
+  }
+  // .skills #icons
+  .devicons {
+    font-size: 2em;
+    color: $red;
+  }
+  // .skills .devicons
+  .icon-block {
+    background-color: transparent !important;
+
+    h5 {
+      margin: 10px 0;
+      font-size: 1.25em;
+    }
+  } // .skills .icon-block
+  .container {
+    @media (max-width: $largeDisplay) {
+      text-align: center;
+    } // .skills .container @media <= 1000px
+  } // .skills .container
+}
+// .skills
+
+.software {
+  h2 {
+    @media (max-width: $largeDisplay) {
+      text-align: center;
+    } // .software h2 @media <= 1000px
+  } // .software h2
+
+  h5 {
+    margin-top: 25px;
+    font-size: 1.25em;
+  } // .software h5
+
+  .softitem {
+    margin-top: 5px;
+    padding: 10px 35px 10px 15px;
+    clear: both;
+    span {
+        color: $gray;
+    } // .software .softitem span
+
+  } // .software .softitem
+
+  .level {
+    float: right;
+
+    p {
+      font-size: 0.75em;
+      margin: 5px;
+      text-align: center;
+    } // .software .level p
+
+    .fa {
+      color: $red;
+      font-size: 0.86em;
+    } // .software .level .fa
+
+  } // .software .level
+
+  #software-list {
+    @media (max-width: $largeDisplay) {
+      width: 70%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+    } // .software #software-list @media <= 1000px
+
+      @media (max-width: $mobileDisplay) {
+        margin-bottom: 30px;
+        padding: 10px;
+        width: 100%;
+    }// .software #software-list @media <= 480px
+
+  } // .software #software-list
+
+  @media (max-width: $largeDisplay) {
+    margin-bottom: 30px;
+  } // .software @media <= 1000px
+
+  @media (max-width: $mobileDisplay) {
+    margin-bottom: 30px;
+  } // .software @media <= 480px
+}
+// .software
+
+.experience {
+  article.item:first-child {
+    border-top: none;
+    padding-top: 0;
+  } // .experience article.item:first-child
+
+  article.item {
+    margin: 10px 0;
+    border-top: 1px solid black;
+    padding-top: 40px;
+    padding-bottom: 5px;
+  } //.experience article.item
+
+h2 {
+  @media (max-width: $largeDisplay) {
+    text-align: center;
+  }
+} // .experience h2
+
+  h5 {
+    margin: 20px 0;
+  } // .experience h5
+
+  ul {
+    margin-bottom: 20px;
+  } // .experience ul
+
+  .header {
+    @include clearfix;
+  } // .experience .header
+
+  .jobtitle {
+    float: left;
+    width: 60%;
+  } // .experience .jobtitle
+
+  .dateitem {
+    float: right;
+    width: 40%;
+    text-align: right;
+    padding-right: 20px;
+  }
+  // .experience .dateitem
+  .container {
+    padding-bottom: 10px;
+  } // .experience .container
+}
+// .experience
+
+.education {
+  padding-bottom: 20px;
+
+  h2 {
+    @media (max-width: $largeDisplay) {
+      text-align: center;
+    }
+  } // .education h2
+
+  article.item {
+    margin-bottom: 1em;
+
+    ul {
+      margin-top: 0;
+      margin-bottom: 20px;
+    } // .education article.item ul
+  }
+  // .education article.item
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  // .education p
+  .container {
+    padding-top: 0px;
+    padding-bottom: 10px;
+  } // .education .container
+}
+// .education
+
+.interests {
+  h2 {
+    @media (max-width: $largeDisplay) {
+      text-align: center;
+    } // .interest h2 @media <= 1000px
+  }
+  .container {
+    padding-top: 0px;
+  } // .interest .container
+}
+// .interests
+
+
+footer {
+  background: $red;
+
+  p {
+    color: white;
+    font-size: .85em;
+  }
+  // footer p
+
+  .container {
+    padding: 10px 20px;
+  }
+  // footer .container
+}// footer

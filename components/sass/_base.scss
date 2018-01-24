@@ -1,0 +1,144 @@
+// _base.scss
+// ==============
+
+
+// ===== Box model fix =====
+html {
+  box-sizing: border-box;
+  color: black;
+} // html
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+// ===== End box model fix =====
+
+
+// ===== Global CSS =====
+body {
+  background: $offWhite;
+  font-family: $bodyFont;
+  font-size: 1em;
+} // body
+
+#{headings()} {
+  font-family: $headFont;
+  font-size: 1.4em;
+  line-height: 1.3em;
+} // h1, h2, h3, h4, h5, h6
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  color: $myBlue;
+  @media (max-width: $largeDisplay) {
+    font-size: 2.0em;
+  } // h1 @media <= 1000px
+} // h1
+
+h2 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  color: $myBlue;
+  padding-bottom: 0.4em;
+  border-bottom: 1px solid black;
+} // h2
+
+h3 {
+  @media (max-width: $tabDisplay) {
+    font-size: 1.2em;
+  } // h3 @media <= 800px
+  @media (max-width: $mobileDisplay) {
+    font-size: 1.1em;
+  } // h3 @media <= 480px
+} // h3
+
+h4 {
+  color: lighten($gray, 10%);
+  @media (max-width: $tabDisplay) {
+    font-size: 1.2em;
+  } // h4 @media <= 800px
+  @media (max-width: $mobileDisplay) {
+    font-size: 1.1em;
+  } // h4 @media <= 480px
+} // h4
+
+h5 {
+  font-size: 1.2em;
+  @media (max-width: $tabDisplay) {
+    font-size: 1em;
+  } // h5 @media <= 800px
+  @media (max-width: $mobileDisplay) {
+    font-size: .9em;
+  } // h5 @media <= 480px
+} // h5
+
+
+li {
+  font-size: 1.2rem;
+  line-height: 1.35em;
+  list-style: disc;
+  margin-left: 1em;
+  color: $gray;
+
+  @media (max-width: $largeDisplay) {
+    font-size: 1em;
+  } // li @media <= 1000px
+} // li
+
+ul {
+  margin-bottom: 20px;
+  margin-top: 10px;
+} //ul
+
+p {
+  font-size: 1.2em;
+  line-height: 1.35em;
+  margin-bottom: 20px;
+  margin-top: 15px;
+      color: $gray;
+  @media (max-width: $largeDisplay) {
+    font-size: 1em;
+  }
+} // p
+
+#content {
+  font-size: 2em;
+} // #content
+
+.main-container, .mainmenu, .header-container {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+} // .main-container, .mainmenu, .header-container
+
+.container {
+  position: relative;
+  padding: 20px;
+} // .container
+
+.col-narrow {
+  float: left;
+  width: 35%;
+
+  section {
+    padding-left: 0;
+  } // .col-narrow section
+
+  @media (max-width: $largeDisplay) {
+    float: none;
+    width: 100%;
+  } //.col-narrow @media <= 1000px
+} // .col-narrow
+
+.col-wide {
+  float: left;
+  width: 65%;
+  @media (max-width: $largeDisplay) {
+    float: none;
+    width: 100%;
+  } // .col-wide @media <= 1000px
+} // .col-wide
